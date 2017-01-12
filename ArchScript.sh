@@ -43,10 +43,8 @@ then
 	dialog --infobox "Skiping step [...]" 10 50 ; 
 	sleep 1
 	clear	
-
 else
 	/usr/bin/sudo pacman -Sy libreoffice libreoffice-pt-BR ; 
-
 fi
 
 # Display message
@@ -58,7 +56,6 @@ then
 	dialog --infobox "Skiping step [...]" 15 50 ; 
 	sleep 1
 	clear	
-
 else
 	/usr/bin/sudo pacman -S  steam intel-dri xf86-video-intel bumblebee nvidia bbswitch lib32-nvidia-utils lib32-intel-dri lib32-virtualgl ; 
 	/usr/bin/sudo gpasswd -a $USER bumblebee ;
