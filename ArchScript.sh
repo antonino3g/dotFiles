@@ -71,9 +71,4 @@ dialog --infobox "Thank you a lot for use my little shell script. See ya!\n\n\n
 / _.-' .-.  .-.  .-.   Copyright (C) 2006-2016 Pacman Development Team\n
 \  '-. '-'  '-'  '-'   Copyright (C) 2002-2006 Judd Vinet\n
  '--'\n\n Author: Antonino Praxedes		       
-" 12 80 ; 
-	
-
-
-
-
+" 12 80 ;	
