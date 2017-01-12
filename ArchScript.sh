@@ -29,12 +29,9 @@ then
 	dialog --infobox "Skiping step [...]" 10 50 ; 
 	sleep 1
 	clear	
-
 else
 	/usr/bin/sudo pacman -S eclipse-jee ; 
-
 fi
-
 
 # Display message
 	dialog --title "[Step 03] - LibreOffice" --msgbox "libreoffice
@@ -68,8 +65,7 @@ else
 	/usr/bin/sudo systemctl enable bumblebeed ;
 	/usr/bin/sudo systemctl start bumblebeed ;
 	/usr/bin/sudo systemctl status bumblebeed ;
-	sleep 4 ;
-
+	sleep 10 ;
 fi
 
 # Final display message
