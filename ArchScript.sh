@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Author: Antonino Praxedes
+# By: Antonino Praxedes
 # Shell Script for Arch Linux
 
 # Display message with option to cancel
