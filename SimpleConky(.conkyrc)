@@ -1,91 +1,93 @@
-# Simple Conky
-# by: Antonino Praxedes
+# Conky, a system monitor, based on torsmo
 
-background yes
-font Sans:size=8
-#xftfont Sans:size=10
+alignment middle_right
+background no
 use_xft yes
-xftalpha 0.9
-update_interval 3.0
+font Dejavu Sans:size=8
+xftalpha 0
+update_interval 2.0
 total_run_times 0
 own_window yes
-own_window_type normal
-own_window_transparent yes
+own_window_transparent no
+own_window_type desktop
+own_window_argb_visual yes
+own_window_argb_value 120
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
-own_window_type override
 double_buffer yes
-minimum_size 220 5
-maximum_width 220
-draw_shades yes
-draw_outline no
+minimum_size 200 200
+maximum_width 200
+draw_shades no
+draw_outline yes
 draw_borders no
-draw_graph_borders yes
-default_color white
+draw_graph_borders no
+default_color 999999
 default_shade_color black
-default_outline_color green
+default_outline_color black
 alignment top_right
-gap_x 70 
-gap_y 80 
+gap_x 8
+gap_y 124
 no_buffers yes
-uppercase no
 cpu_avg_samples 2
+text_buffer_size 1024
 override_utf8_locale no
-uppercase yes # set to yes if you want all text to be in uppercase
+uppercase no
+double_buffer yes
 
 TEXT
-${color white}SYSTEM ${hr 1}${color}
+A R C H  L I N U X  x64
+$hr
 
-Hostname: $alignr$nodename
-Kernel: $alignr$kernel
-Uptime: $alignr$uptime
-Temp: ${alignr}${acpitemp}C
+Hostname:$alignr$nodename
+System: $alignr$kernel
+Uptime:$alignr$uptime
 
-CPU: ${alignr}${freq} MHz
-Processes: ${alignr}$processes ($running_processes running)
-Load: ${alignr}$loadavg
+C P U$alignr ${cpu cpu0}%
+$hr
 
-CPU ${alignr}${cpu cpu1}%
-${cpubar 4 cpu1}
+Procesador: ${alignr}${freq_g}GHz / 2.60GHz
+${color #4682B4}${cpubar 4 cpu0}${color grey}
+${color #4682B4}${cpubar 4 cpu1}${color grey}
+${color #4682B4}${cpubar 4 cpu2}${color grey}
+${color #4682B4}${cpubar 4 cpu3}${color grey}
 
-Ram ${alignr}$mem / $memmax ($memperc%)
-${membar 4}
-swap ${alignr}$swap / $swapmax ($swapperc%)
-${swapbar 4}
+T O P   C P U 
+$hr
 
-Highest CPU $alignr CPU% MEM%
-${top name 1}$alignr${top cpu 1}${top mem 1}
-${top name 2}$alignr${top cpu 2}${top mem 2}
-${top name 3}$alignr${top cpu 3}${top mem 3}
-${top name 4}$alignr${top cpu 3}${top mem 4}
-${top name 5}$alignr${top cpu 3}${top mem 5}
-${top name 6}$alignr${top cpu 3}${top mem 6}
+Processes$alignr CPU% MEM%
+${top name 1}$alignr${top cpu 1}   ${top mem 1}
+${top name 2}$alignr${top cpu 2}   ${top mem 2}
+${top name 3}$alignr${top cpu 3}   ${top mem 3}
+${top name 4}$alignr${top cpu 4}   ${top mem 4}
 
-Highest MEM $alignr CPU% MEM%
-${top_mem name 1}$alignr${top_mem cpu 1}${top_mem mem 1}
-${top_mem name 2}$alignr${top_mem cpu 2}${top_mem mem 2}
-${top_mem name 3}$alignr${top_mem cpu 3}${top_mem mem 3}
-${top_mem name 4}$alignr${top_mem cpu 3}${top_mem mem 4}
-${top_mem name 5}$alignr${top_mem cpu 3}${top_mem mem 5}
-${top_mem name 6}$alignr${top_mem cpu 3}${top_mem mem 6}
+R A M$alignr$memperc%    
+$hr
 
-${color white}Filesystem ${hr 1}${color}
+Memoria: ${alignr}${mem} / ${memmax}
+${color #4682B4}${membar 4}${color grey}
 
-Root: ${alignr}${fs_free /} / ${fs_size /}
-${fs_bar 4 /}
-Home: ${alignr}${fs_free /home} / ${fs_size /home}
-${fs_bar 4 /home}
-Var: ${alignr}${fs_free /var} / ${fs_size /var}
-${fs_bar 4 /media/HDD0}
-Boot: ${alignr}${fs_free /boot} / ${fs_size /boot}
-${fs_bar 4 /media/HDD1}
+T O P   R A M
+$hr
 
-${color white}NETWORK ${hr 1}${color}
+Proceso $alignr CPU% MEM%
+${top_mem name 1}$alignr${top_mem cpu 1}   ${top_mem mem 1}
+${top_mem name 2}$alignr${top_mem cpu 2}   ${top_mem mem 2}
+${top_mem name 3}$alignr${top_mem cpu 3}   ${top_mem mem 3}
+${top_mem name 4}$alignr${top_mem cpu 4}   ${top_mem mem 4}
 
-Down ${downspeed eth0} k/s ${alignr}Up ${upspeed eth0} k/s
-${downspeedgraph eth0 25,107} ${alignr}${upspeedgraph eth0 25,107}
-Total ${totaldown eth0} ${alignr}Total ${totalup eth0}
+A R M A Z E N A M E N T O
+$hr
 
-${color white}NOW PLAYING ${hr 1}${color}
+Home: ${alignr}$color${fs_used /home} / ${fs_size /home}
+${color #4682B4}${fs_bar 4 /home}${color grey}
+Arquivos_D ${alignr}$color${fs_used /home/worness/Arquivos_D} / ${fs_size /home/worness/Arquivos_D}
+${color #4682B4}${fs_bar 4 /home/worness/Arquivos_D}}${color grey}
 
-# ${execpi 20 cmus-remote -Q | grep title | cut -d' ' -f3- } by  
-# ${execpi 20 cmus-remote -Q | grep file | cut -d'/' -f5 }
+R E D E S
+$hr
+
+Ip Address${alignr}${addr wlp3s0}
+SSID:${alignr}${wireless_essid wlp3s0}
+
+Down ${downspeed wlp3s0} k/s ${alignr}Up ${upspeed wlp3s0} k/s
+${color #4682B4}${downspeedgraph wlp3s0 25,107} ${alignr}${upspeedgraph wlp3s0 25,107}${color grey}
+Total ${totaldown wlp3s0} ${alignr}Total ${totalup wlp3s0}
