@@ -44,7 +44,7 @@ Uptime:$alignr$uptime
 C P U$alignr ${cpu cpu0}%
 $hr
 
-Procesador: ${alignr}${freq_g}GHz / 2.60GHz
+Procesador: ${alignr}${freq_g}GHz / 3.1GHz
 ${color #4682B4}${cpubar 4 cpu0}${color grey}
 ${color #4682B4}${cpubar 4 cpu1}${color grey}
 ${color #4682B4}${cpubar 4 cpu2}${color grey}
