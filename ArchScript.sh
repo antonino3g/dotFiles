@@ -21,7 +21,7 @@ else
 fi
 
 # Display message
-	dialog --title "[Step 02] - IDE Eclipse JEE" --msgbox "eclipse-jee\n\n <Esc> Skip" 10 50	
+	dialog --title "[Step 02] - Programming" --msgbox "eclipse-jee\n\n <Esc> Skip" 10 50	
 
 # Return status of non-zero indicates cancel
 if [ "$?" != "0" ]
@@ -70,5 +70,5 @@ dialog --infobox "Thank you a lot for use my little shell script. See ya!\n\n\n
   .--.                 Pacman v5.0.1 - libalpm v10.0.1\n
 / _.-' .-.  .-.  .-.   Copyright (C) 2006-2016 Pacman Development Team\n
 \  '-. '-'  '-'  '-'   Copyright (C) 2002-2006 Judd Vinet\n
- '--'\n\n Author: Antonino Praxedes		       
+ '--'\n\n By: Antonino Praxedes		       
 " 12 80 ;	
