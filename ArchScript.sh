@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # By: Antonino Praxedes
-# Shell Script for Arch Linux
+# Shell Script for After installation Arch Linux
 
 # Display message with option to cancel
 	dialog --title "[Step 01] - Softwares Basics" --msgbox "jdk8-openjdk  
