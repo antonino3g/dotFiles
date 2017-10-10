@@ -5,7 +5,7 @@
 
 # Display message with option to cancel
 	dialog --title "[Step 01] - Softwares Basics" --msgbox "jdk8-openjdk  
-\nicedtea-web\nnet-tools\nsystem-config-printer\ncups\nnghostscript\ngsfonts\nfirefox-pt-BR\nflashplayer\nunrar\nunzip\np7zip\nalsa-lib\nalsa-tools\nalsa-utils\nalsa-oss\nvlc\ndropbox\naudacious\nconky\nntfs-3g\nprimus\nnetworkmanager\nnetwork-manager-applet\nplayonlinux\nwine <all>\n\n <Esc> Skip" 28 50
+\nicedtea-web\nnet-tools\nfile-roller\nsystem-config-printer\ncups\nnghostscript\ngsfonts\nfirefox-pt-BR\nflashplayer\nunrar\nunzip\np7zip\nalsa-lib\nalsa-tools\nalsa-utils\nalsa-oss\nvlc\ndropbox\naudacious\nconky\nntfs-3g\nprimus\nnetworkmanager\nnetwork-manager-applet\nplayonlinux\nwine <all>\n\n <Esc> Skip" 28 50
 
 # Return status of non-zero indicates cancel
 if [ "$?" != "0" ]
@@ -14,7 +14,7 @@ then
 	sleep 1
 	clear	
 else
-	/usr/bin/sudo pacman -S jdk8-openjdk icedtea-web net-tools firefox firefox-i18n-pt-br flashplugin unrar unzip p7zip alsa-lib alsa-tools alsa-utils alsa-oss vlc dropbox audacious conky ntfs-3g primus networkmanager network-manager-applet playonlinux wine wine_gecko wine-mono lib32-libpulse lib32-alsa-plugins lib32-mpg123 lib32-sdl system-config-printer cups ghostscript gsfonts ;  
+	/usr/bin/sudo pacman -S jdk8-openjdk icedtea-web net-tools firefox firefox-i18n-pt-br flashplugin unrar unzip p7zip alsa-lib alsa-tools alsa-utils alsa-oss vlc dropbox audacious conky ntfs-3g primus networkmanager network-manager-applet playonlinux wine wine_gecko wine-mono lib32-libpulse lib32-alsa-plugins lib32-mpg123 lib32-sdl system-config-printer cups ghostscript gsfonts file-roller ;  
 	/usr/bin/sudo systemctl enable NetworkManager.service ;
 	/usr/bin/sudo systemctl start NetworkManager.service ;		
 	/usr/bin/sudo systemctl start org.cups.cupsd.service ;
