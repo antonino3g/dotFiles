@@ -19,7 +19,6 @@ else
 	/usr/bin/sudo systemctl start NetworkManager.service ;		
 	/usr/bin/sudo systemctl start org.cups.cupsd.service ;
 	/usr/bin/sudo systemctl enable org.cups.cupsd.service ;
-	/usr/bin/sudo systemctl status org.cups.cupsd.service ;
 	sleep 10;
 fi
 
@@ -64,7 +63,6 @@ else
 	/usr/bin/sudo gpasswd -a $USER bumblebee ;
 	/usr/bin/sudo systemctl enable bumblebeed ;
 	/usr/bin/sudo systemctl start bumblebeed ;
-	/usr/bin/sudo systemctl status bumblebeed ;
 	sleep 10 ;
 fi
 
