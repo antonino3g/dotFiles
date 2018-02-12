@@ -1,0 +1,3 @@
+dd bs=4M if=/local/da/imagem.iso of=/dev/sd* && sync
+
+## * use o comando "fdisk -l" para saber qual o nome correto do pendrive (geralmente - /dev/sdc).
