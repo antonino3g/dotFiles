@@ -14,7 +14,7 @@ then
 	sleep 1
 	clear	
 else
-	/usr/bin/sudo pacman -S jdk8-openjdk icedtea-web net-tools firefox firefox-i18n-pt-br flashplugin unrar unzip p7zip alsa-lib alsa-tools alsa-utils alsa-oss vlc dropbox audacious conky ntfs-3g primus networkmanager network-manager-applet playonlinux wine wine_gecko wine-mono lib32-libpulse lib32-alsa-plugins lib32-mpg123 lib32-sdl system-config-printer cups ghostscript gsfonts file-roller ;  
+	/usr/bin/sudo pacman -S jdk8-openjdk qt4 icedtea-web net-tools firefox firefox-i18n-pt-br flashplugin unrar unzip p7zip alsa-lib alsa-tools alsa-utils alsa-oss vlc dropbox audacious conky ntfs-3g primus networkmanager network-manager-applet playonlinux wine wine_gecko wine-mono lib32-libpulse lib32-alsa-plugins lib32-mpg123 lib32-sdl system-config-printer cups ghostscript gsfonts file-roller ;  
 	/usr/bin/sudo systemctl enable NetworkManager.service ;
 	/usr/bin/sudo systemctl start NetworkManager.service ;		
 	/usr/bin/sudo systemctl start org.cups.cupsd.service ;
