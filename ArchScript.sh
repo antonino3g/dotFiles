@@ -14,16 +14,23 @@ then
 	sleep 1
 	clear	
 else
-	/usr/bin/sudo pacman -S jdk8-openjdk qt4 icedtea-web net-tools firefox firefox-i18n-pt-br flashplugin unrar unzip p7zip alsa-lib alsa-tools alsa-utils alsa-oss vlc dropbox audacious conky ntfs-3g primus networkmanager network-manager-applet playonlinux wine wine_gecko wine-mono lib32-libpulse lib32-alsa-plugins lib32-mpg123 lib32-sdl system-config-printer cups ghostscript gsfonts file-roller ;  
+	/usr/bin/sudo pacman -S jdk8-openjdk qt4 icedtea-web net-tools ;
+	/usr/bin/sudo pacman -S firefox firefox-i18n-pt-br flashplugin unrar unzip ;
+	/usr/bin/sudo pacman -S alsa-lib alsa-tools alsa-utils alsa-oss playonlinux ;
+	/usr/bin/sudo pacman -S vlc audacious conky ntfs-3g primus networkmanager network-manager-applet ;
+	/usr/bin/sudo pacman -S wine wine_gecko wine-mono lib32-libpulse ;
+	/usr/bin/sudo pacman -S lib32-alsa-plugins lib32-mpg123 lib32-sdl ;
+	/usr/bin/sudo pacman -S system-config-printer cups ghostscript gsfonts file-roller ;  
+	
 	/usr/bin/sudo systemctl enable NetworkManager.service ;
 	/usr/bin/sudo systemctl start NetworkManager.service ;		
 	/usr/bin/sudo systemctl start org.cups.cupsd.service ;
 	/usr/bin/sudo systemctl enable org.cups.cupsd.service ;
-	sleep 10;
+	sleep 4;
 fi
 
 # Display message
-	dialog --title "[Step 02] - Programming" --msgbox "eclipse-jee\n\n <Esc> Skip" 10 50	
+	dialog --title "[Step 02] - AUR " --msgbox "android-studio\ndropbox\ngoogle-chrome\n\n <Esc> Skip" 10 50	
 
 # Return status of non-zero indicates cancel
 if [ "$?" != "0" ]
@@ -32,7 +39,9 @@ then
 	sleep 1
 	clear	
 else
-	/usr/bin/sudo pacman -S eclipse-jee ; 
+	yaourt -S android-studio ; 
+	yaourt -S dropbox ; 
+	yaourt -S google-chrome ; 
 fi
 
 # Display message
@@ -63,7 +72,7 @@ else
 	/usr/bin/sudo gpasswd -a $USER bumblebee ;
 	/usr/bin/sudo systemctl enable bumblebeed ;
 	/usr/bin/sudo systemctl start bumblebeed ;
-	sleep 10 ;
+	sleep 4 ;
 fi
 
 # Final display message
@@ -72,4 +81,4 @@ dialog --infobox "Thank you a lot for use my little shell script. See ya!\n\n\n
 / _.-' .-.  .-.  .-.   Copyright (C) 2006-2016 Pacman Development Team\n
 \  '-. '-'  '-'  '-'   Copyright (C) 2002-2006 Judd Vinet\n
  '--'\n\n By: Antonino Praxedes		       
-" 12 80 ;	
+" 12 80 ;
