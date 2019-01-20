@@ -4,8 +4,7 @@
 # Shell Script for After installation Arch Linux
 
 # Display message with option to cancel
-	dialog --title "[Step 01] - Softwares Basics" --msgbox "jdk8-openjdk  
-\nicedtea-web\nnet-tools\nfile-roller\nsystem-config-printer\ncups\nnghostscript\ngsfonts\nfirefox-pt-BR\nflashplayer\nunrar\nunzip\np7zip\nalsa-lib\nalsa-tools\nalsa-utils\nalsa-oss\nvlc\ndropbox\naudacious\nconky\nntfs-3g\nprimus\nnetworkmanager\nnetwork-manager-applet\nplayonlinux\nwine <all>\n\n <Esc> Skip" 28 50
+	dialog --title "[Step 01] - Softwares Basics" --msgbox "jdk8-openjdk\nicedtea-web\nnet-tools\nfile-roller\nsystem-config-printer\ncups\nnghostscript\ngsfonts\nfirefox-pt-BR\nflashplayer\nunrar\nunzip\np7zip\nalsa-lib\nalsa-tools\nalsa-utils\nalsa-oss\nvlc\ndropbox\naudacious\nconky\nntfs-3g\nprimus\nnetworkmanager\nnetwork-manager-applet\nplayonlinux\nwine <all>\n\n <Esc> Skip" 28 50
 
 # Return status of non-zero indicates cancel
 if [ "$?" != "0" ]
