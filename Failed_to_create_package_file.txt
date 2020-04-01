@@ -1,0 +1,5 @@
+==> ERROR: Failed to create package file.
+
+aumentar tamanho swap: 
+
+mount -o remount,size=8G /tmp/
