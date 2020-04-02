@@ -1,0 +1,3 @@
+Start conky with Gnome
+
+yoaurt gnome-session-properties
