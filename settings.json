@@ -1,5 +1,7 @@
 {
     "workbench.colorTheme": "Dracula",
+    "workbench.startupEditor": "newUntitledFile", //Starting new File VS code
+    "workbench.editor.labelFormat": "short",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures" : true,
     "editor.fontSize": 14,
@@ -8,14 +10,23 @@
     "editor.renderLineHighlight": "gutter",
     "editor.tabSize": 2,
     "terminal.integrated.fontSize": 14,
+    "extensions.ignoreRecommendations": true,
+    "explorer.compactFolders": false,
     "emmet.includeLanguages": {
       "javascript": "javascriptreact"
     },
     "emmet.syntaxProfiles": {
       "javascript" : "jsx"
     },
+
     "javascript.updateImportsOnFileMove.enabled": "never",
+    "typescript.updateImportsOnFileMove.enabled": "never",
+
     "editor.parameterHints.enabled": false,
     "breadcrumbs.enabled": true,
-    "javascript.suggest.autoImports": false
+    "javascript.suggest.autoImports": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+
+
 }
