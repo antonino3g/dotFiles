@@ -15,3 +15,10 @@ SPACESHIP_PROMPT_ORDER=(
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
+
+## Final 
+# Two regular plugins loaded without tracking.
+zinit light zsh-users/zsh-autosuggestions
+zinit light zdharma/fast-syntax-highlighting
+zinit light zsh-users/zsh-completions
+
