@@ -12,7 +12,6 @@
     "terminal.integrated.fontSize": 14,
     "extensions.ignoreRecommendations": true,
     "explorer.compactFolders": false,
-    
     "emmet.includeLanguages": {
       "javascript": "javascriptreact"
     },
@@ -29,5 +28,33 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
 
+    "emojisense.unicodeCompletionsEnabled": true,
+    "emojisense.markupCompletionsEnabled": false,
+    "emojisense.languages": {
+      "javascript": true,
+      "markdown": true,
+      "plaintext": true,
+      "json": true
+    },
 
+    "[javascipt]": {
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+      }
+    },
+    "[javascriptreact]": {
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+      }
+    },
+    "[typescript]": {
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+      }
+    },
+    "[typescriptreact]": {
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+      }
+    },
 }
