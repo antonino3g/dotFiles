@@ -27,7 +27,6 @@
       }
     ]
   },
-
   "settings": {
     "import/resolver": {
       "typescript": {}
