@@ -1,60 +1,53 @@
 {
-    "workbench.colorTheme": "Dracula",
-    "workbench.startupEditor": "newUntitledFile", //Starting new File VS code
-    "workbench.editor.labelFormat": "short",
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures" : true,
-    "editor.fontSize": 14,
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.rulers": [80, 120],
-    "editor.renderLineHighlight": "gutter",
-    "editor.tabSize": 2,
-    "terminal.integrated.fontSize": 14,
-    "extensions.ignoreRecommendations": true,
-    "explorer.compactFolders": false,
-    "emmet.includeLanguages": {
-      "javascript": "javascriptreact"
-    },
-    "emmet.syntaxProfiles": {
-      "javascript" : "jsx"
-    },
-
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "typescript.updateImportsOnFileMove.enabled": "never",
-
-    "editor.parameterHints.enabled": false,
-    "breadcrumbs.enabled": true,
-    "javascript.suggest.autoImports": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-
-    "emojisense.unicodeCompletionsEnabled": true,
-    "emojisense.markupCompletionsEnabled": false,
-    "emojisense.languages": {
-      "javascript": true,
-      "markdown": true,
-      "plaintext": true,
-      "json": true
-    },
-
-    "[javascipt]": {
-      "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-      }
-    },
-    "[javascriptreact]": {
-      "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-      }
-    },
-    "[typescript]": {
-      "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-      }
-    },
-    "[typescriptreact]": {
-      "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-      }
-    },
+  "workbench.colorTheme": "Dracula",
+  "workbench.startupEditor": "newUntitledFile", //Starting new File VS code
+  "workbench.editor.labelFormat": "short",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.renderLineHighlight": "gutter",
+  "editor.tabSize": 2,
+  "terminal.integrated.fontSize": 14,
+  "extensions.ignoreRecommendations": true,
+  "explorer.compactFolders": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.parameterHints.enabled": false,
+  "breadcrumbs.enabled": true,
+  "javascript.suggest.autoImports": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "editor.formatOnSave": true,
+  "[javascipt]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+    }
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+    }
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+    }
+  },
+  "window.zoomLevel": 0,
 }
