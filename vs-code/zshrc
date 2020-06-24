@@ -17,7 +17,7 @@ SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 
 ## Final 
-# Two regular plugins loaded without tracking.
+# Two regular plugins loaded without tracking. (Abaixo sempre do código zinit)
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-completions
