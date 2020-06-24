@@ -82,7 +82,7 @@ ${color #4682B4}${fs_bar 4 /home}${color grey}
 Arquivos_D ${alignr}$color${fs_used /home/worness/Arquivos_D} / ${fs_size /home/worness/Arquivos_D}
 ${color #4682B4}${fs_bar 4 /home/worness/Arquivos_D}}${color grey}
 
-R E D E S
+N E T W O R K
 $hr
 
 Ip Address${alignr}${addr wlp3s0}
