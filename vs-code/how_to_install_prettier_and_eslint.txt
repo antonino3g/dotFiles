@@ -1,0 +1,8 @@
+# Install ESLINT 
+$ yarn add eslint -D
+
+# Init Eslint
+$ yarn eslint --init
+
+# Install Prettier and Plugin on VS Code!!
+$ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
