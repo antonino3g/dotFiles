@@ -14,4 +14,4 @@ A set of shell scripts and other files to search.
 
 
 -----
-**Created by Antonino Praxedes :wave: [Get in touch!](https://www.linkedin.com/in/antoninopraxedes/)**
+**Created by Antonino Praxedes 👋🏻 [Get in touch!](https://www.linkedin.com/in/antoninopraxedes/)**
