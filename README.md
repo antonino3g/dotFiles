@@ -8,7 +8,7 @@
   </a>
 </p>
 
-## :books: dotFiles  
+## dotFiles  
 
 A set of shell scripts and other files to search. 
 
