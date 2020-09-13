@@ -1,4 +1,4 @@
-Git Basic
+## Git Basic
 
 ```bash
 ## Passos após clonar um repo. git
